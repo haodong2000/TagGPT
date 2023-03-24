@@ -1,2 +1,2 @@
 # TagGPT
-TagGPT: A multimodal dialog generation engine based on ChatGPT.
+TagGPT: A simple multimodal dialog generation engine based on ChatGPT.
