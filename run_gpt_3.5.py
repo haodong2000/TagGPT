@@ -74,15 +74,20 @@ def interact_with_ChatGPT():
 interact_with_ChatGPT()
 
 """
-1
+demo_1
 
 Here is a picture [[[./images/in/dogpizza.jpg]]], replace the dogs with white cute cats.END
 
 Give me one similar image, thanksEND
 
-Give me 3 images about wild animals in deep oceanEND
+now give me three images about wild animals in deep oceanEND
 
 Please discribe the first one and speak to meEND
+
+Help my to draw a picture about the scenarios in big forest
+END
+
+Please discribe the it and speak to meEND
 
 Here is another picture [[[./images/in/elon.png]]], tell me how many peoples are there?END
 
@@ -90,17 +95,22 @@ END
 """
 
 """
-2
+demo_2
 
 <<<./audios/in/haodong.mp3>>>END
 
-here is a piece of audio, <<<./audios/in/assemblyai.mp3>>>.
-please writa a short report about AssemblyAIEND
+<<<./audios/in/assemblyai.mp3>>>
+please help me writa a short introduction about AssemblyAI END
 
-What could we do using assemblyai api? give me a list, and speak it to me.
+What can people do using their api? give me a list.
 END
 
-design a logo for assemblyai, and draw it based on your description
-
+I am a little confused about the last one, can you provide me with a more detailed analysis, and speak to me.
 END
+
+speak your answer, please
+END
+
+draw a logo for assemblyai, in technology style, thanks END
+
 """

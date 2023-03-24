@@ -2,8 +2,8 @@ import requests
 import time
 
 
-upload_endpoint = "https://api.assemblyai.com/v2/upload"
-transcript_endpoint = "https://api.assemblyai.com/v2/transcript"
+upload_endpoint = "http://api.assemblyai.com/v2/upload"
+transcript_endpoint = "http://api.assemblyai.com/v2/transcript"
 
 
 # Helper for `upload_file()`
@@ -40,7 +40,7 @@ def request_transcript(upload_url, header):
 
 # Make a polling endpoint
 def make_polling_endpoint(transcript_response):
-    polling_endpoint = "https://api.assemblyai.com/v2/transcript/"
+    polling_endpoint = "http://api.assemblyai.com/v2/transcript/"
     polling_endpoint += transcript_response['id']
     return polling_endpoint
 
