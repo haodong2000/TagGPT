@@ -1,5 +1,5 @@
 # TagGPT
-TagGPT: A simple multimodal dialog generation engine based on ChatGPT.
+TagGPT: A simple ChatGPT based multimodal dialog generation engine that can "see" and "hear"
 
 ## Configuration
 
