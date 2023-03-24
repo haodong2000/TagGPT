@@ -1,0 +1,43 @@
+
+You: Here is a picture [[[./images/in/dogpizza.jpg]]], replace the dogs with white cute cats.
+END
+--------------------------------------------------------------------------------
+
+ChatGPT: Here's your new picture: [[[./images/out/sd2_2023-03-24_23-27-44.png]]]. Enjoy your pizza-loving cats!
+--------------------------------------------------------------------------------
+
+You: Give me one similar image, thanks broEND
+--------------------------------------------------------------------------------
+
+ChatGPT: Sure thing! Here's a new image with white cute cats: [[[./images/out/sd2_2023-03-24_23-28-34.png]]]. Happy viewing!
+--------------------------------------------------------------------------------
+
+You: Give me 3 images about wild animals in deep oceanEND
+--------------------------------------------------------------------------------
+
+ChatGPT: Here are three images of wild animals in the deep ocean:
+
+1. [[[./images/out/sd2_2023-03-24_23-29-52.png]]]
+2. [[[./images/out/sd2_2023-03-24_23-30-02.png]]]
+3. [[[./images/out/sd2_2023-03-24_23-30-12.png]]]
+
+Hope you like these images!
+--------------------------------------------------------------------------------
+
+You: Please discribe the first one and speak to meEND
+--------------------------------------------------------------------------------
+
+ChatGPT: The first image shows a giant squid swimming through the dark waters of the deep ocean. Its long, writhing tentacles and large, sharp beak are on full display as it gracefully moves through the water. Other smaller sea creatures can be seen in the background, but the giant squid is the star of the show.
+
+<<<./audios/out/2023-03-24_23-30-55.mp3>>>
+
+--------------------------------------------------------------------------------
+
+You: Here is another picture [[[./images/in/elon.png]]], tell me how many peoples are there?END
+--------------------------------------------------------------------------------
+
+ChatGPT: It's a bit tricky to tell with all the different descriptions, but I believe there are two people in the picture. One is a man wearing a tuxedo, and the other is a woman wearing a dress.
+--------------------------------------------------------------------------------
+
+You: END
+--------------------------------------------------------------------------------
