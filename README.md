@@ -15,9 +15,9 @@
 1. Add your `API_KEY` for `OPENAI`, `REPLICATE`, and `AAI` into the environment variables
 
 ```
-export OPENAI_API_KEY='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'
-export REPLICATE_API_TOKEN='1bfc2afabff6319bb16a80cff8ca2b693c06d383'
-export AAI_API_KEY='14aa7acd8e694265b4e51a65247f9a19'
+export OPENAI_API_KEY='...'
+export REPLICATE_API_TOKEN='...'
+export AAI_API_KEY='...'
 ```
 
 2. Install required packages
