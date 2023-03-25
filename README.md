@@ -1,11 +1,10 @@
 # TagGPT
 
-- TagGPT: A simple ChatGPT based multimodal dialog generation engine that can
+- **T**ext-**a**udio-**g**raph GPT: A simple ChatGPT based multimodal dialog generation engine that can
   - "see" through [clip-interrogator](https://replicate.com/pharmapsychotic/clip-interrogator),
   - "draw" through [stable-diffusion-v2](https://replicate.com/cjwbw/stable-diffusion-v2),
   - "hear" through [assemblyai-transcript](https://www.assemblyai.com/),
   - and "speak" through [gTTS](https://github.com/pndurette/gTTS)
-- Tag: **T**ext, **a**udio, and **g**raph
 
 ## Configuration
 
