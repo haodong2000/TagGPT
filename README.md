@@ -33,6 +33,7 @@ time
 - Images are expressed as `[[[./path/to/image]]]`
 - Audios are expressed as `<<<./path/to/audio>>>`
 - `END` is the end-of-input marker
+- Examples:
 
 ```
 You: Here is a picture [[[./images/in/dogpizza.jpg]]], replace the dogs with white cute cats.
@@ -79,6 +80,10 @@ TagGPT
 |   └── out
 └── run_gpt_3.5.py
 ```
+
+## To do
+
+- Build a UI (maybe)
 
 ## Tips
 
