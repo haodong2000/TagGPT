@@ -1,6 +1,6 @@
 # TagGPT
 
-TagGPT: A simple ChatGPT based multimodal dialog generation engine that can "see" and "hear"
+TagGPT: A simple ChatGPT based multimodal dialog generation engine that can "see/draw" and "hear/speak"
 
 Tag: **T**ext, **a**udio, and **g**raph
 
@@ -42,18 +42,10 @@ TagGPT
 │   └── transcribe.py
 ├── audios
 │   ├── in
-│   |   ├── 
-|   |   └── 
 |   └── out
-│   |   ├── 
-|   |   └── 
 ├── images
 │   ├── in
-│   |   ├── 
-|   |   └── 
 |   └── out
-│   |   ├── 
-|   |   └── 
 └── run_gpt_3.5.py
 ```
 
