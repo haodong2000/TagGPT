@@ -2,7 +2,7 @@
 
 **[Demos](https://lebronlihd.github.io/blog/2023/demos-of-taggpt/) | [Prompt](https://lebronlihd.github.io/projects/taggpt/)**
 
-![p4_taggpt](https://user-images.githubusercontent.com/67775090/227708815-8c4baf62-73de-4b03-8e3c-3b16980aa0d5.jpeg)
+<img src="https://user-images.githubusercontent.com/67775090/227708815-8c4baf62-73de-4b03-8e3c-3b16980aa0d5.jpeg" class="center" width="256">
 
 - **T**ext-**a**udio-**g**raph GPT: A simple ChatGPT based multimodal dialog generation engine that can
   - "see" through [clip-interrogator](https://replicate.com/pharmapsychotic/clip-interrogator),
