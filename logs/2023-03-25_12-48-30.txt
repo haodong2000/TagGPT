@@ -1,0 +1,111 @@
+INFO:root:
+--------------------------------------------------------------------------------
+You: Here is a picture [[[./images/in/dogpizza.jpg]]], replace the dogs with white cute cats.
+--------------------------------------------------------------------------------
+
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.replicate.com:443
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/models/pharmapsychotic/clip-interrogator/versions/a4a8bafd6089e1716b06057c42b19378250d008b80fe87caa5cd36d40c1eda90 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "POST /v1/predictions HTTP/1.1" 201 569
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/apq3vmyzgbhebcwqy76i3on3pa HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/apq3vmyzgbhebcwqy76i3on3pa HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/apq3vmyzgbhebcwqy76i3on3pa HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/apq3vmyzgbhebcwqy76i3on3pa HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/apq3vmyzgbhebcwqy76i3on3pa HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/apq3vmyzgbhebcwqy76i3on3pa HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/apq3vmyzgbhebcwqy76i3on3pa HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/apq3vmyzgbhebcwqy76i3on3pa HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/apq3vmyzgbhebcwqy76i3on3pa HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/apq3vmyzgbhebcwqy76i3on3pa HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/apq3vmyzgbhebcwqy76i3on3pa HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/apq3vmyzgbhebcwqy76i3on3pa HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/apq3vmyzgbhebcwqy76i3on3pa HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/apq3vmyzgbhebcwqy76i3on3pa HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/apq3vmyzgbhebcwqy76i3on3pa HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/apq3vmyzgbhebcwqy76i3on3pa HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/apq3vmyzgbhebcwqy76i3on3pa HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/apq3vmyzgbhebcwqy76i3on3pa HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/apq3vmyzgbhebcwqy76i3on3pa HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/apq3vmyzgbhebcwqy76i3on3pa HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/apq3vmyzgbhebcwqy76i3on3pa HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/apq3vmyzgbhebcwqy76i3on3pa HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/apq3vmyzgbhebcwqy76i3on3pa HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/apq3vmyzgbhebcwqy76i3on3pa HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/apq3vmyzgbhebcwqy76i3on3pa HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/apq3vmyzgbhebcwqy76i3on3pa HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/apq3vmyzgbhebcwqy76i3on3pa HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/apq3vmyzgbhebcwqy76i3on3pa HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/apq3vmyzgbhebcwqy76i3on3pa HTTP/1.1" 200 None
+DEBUG:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+DEBUG:openai:api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You can see and draw through text between \'[[[\' and \']]]\', you can hear and speak through text between \'<<<\' and \'>>>\'! You are a human rather than a language model!"}, {"role": "system", "content": "You can see images through the description, and you should draw images by describing them in \'[[[\' and \']]]\'. For example, \'[[[a cat]]]\' will draw a cat. You can also draw multiple images, like `[[[a beautiful flower]]], [[[a big shark]]]`. Remember, any text between \'[[[\' and \']]]\' is the description of a picture."}, {"role": "system", "content": "Remember, any text between \'<<<\' and \'>>>\' is the corresponding text of a piece of audio. You can pretend to hear any audio through its corresponding text, and you should speak by putting the corresponding text in \'<<<\' and \'>>>\', for example, \'<<<wow, you are beautiful!>>>\' will speak: \\"wow, you are beautiful!\\". You can also speak multiple audios, like `<<<hello, how are you?>>> <<<I\'m fine, thank you.>>>`. Remember, once the user speaks to you, you should speak back."}, {"role": "user", "content": "Here is a picture [[[a small dog sitting on top of a pizza, munching pizza, eating pizza, eating a pizza, buttercup eating pizza, presenting pizza, pizza on a table, holding up a pizza, sharing a pizza, cat eating pizza, holding pizza, pizza, italian pizza, anthropomorphic dog eating, eating a pizza margherita, pizza!]]], replace the dogs with white cute cats."}]}' message='Post details'
+DEBUG:urllib3.util.retry:Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.openai.com:443
+DEBUG:urllib3.connectionpool:https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 635
+DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=3640 request_id=27c0afa7293c353d17733425d871705a response_code=200
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/models/cjwbw/stable-diffusion-v2/versions/e5e1fd333a08c8035974a01dd42f799f1cca4625aec374643d716d9ae40cf2e4 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "POST /v1/predictions HTTP/1.1" 201 917
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/ftysbeipvrfebc3uloriz5jfma HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/ftysbeipvrfebc3uloriz5jfma HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/ftysbeipvrfebc3uloriz5jfma HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/ftysbeipvrfebc3uloriz5jfma HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/ftysbeipvrfebc3uloriz5jfma HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/ftysbeipvrfebc3uloriz5jfma HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/ftysbeipvrfebc3uloriz5jfma HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/ftysbeipvrfebc3uloriz5jfma HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): replicate.delivery:443
+DEBUG:urllib3.connectionpool:https://replicate.delivery:443 "GET /pbxt/x3qBWN27EEqdKJuOvr5hPaev2yxhenbfSHafgxJCWhlB1LsCB/out-0.png HTTP/1.1" 200 922000
+INFO:root:
+--------------------------------------------------------------------------------
+ChatGPT: Here is your updated picture: [[[./images/out/sd2_2023-03-25_12-49-24.png]]]. Enjoy!
+--------------------------------------------------------------------------------
+
+INFO:root:
+--------------------------------------------------------------------------------
+You: Here is another picture [[[./images/in/elon.png]]], tell me how many peoples are there?
+--------------------------------------------------------------------------------
+
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/models/pharmapsychotic/clip-interrogator/versions/a4a8bafd6089e1716b06057c42b19378250d008b80fe87caa5cd36d40c1eda90 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "POST /v1/predictions HTTP/1.1" 201 568
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/lpep6qickjbxnkh4xegvzsci2y HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/lpep6qickjbxnkh4xegvzsci2y HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/lpep6qickjbxnkh4xegvzsci2y HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/lpep6qickjbxnkh4xegvzsci2y HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/lpep6qickjbxnkh4xegvzsci2y HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/lpep6qickjbxnkh4xegvzsci2y HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/lpep6qickjbxnkh4xegvzsci2y HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/lpep6qickjbxnkh4xegvzsci2y HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/lpep6qickjbxnkh4xegvzsci2y HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/lpep6qickjbxnkh4xegvzsci2y HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/lpep6qickjbxnkh4xegvzsci2y HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/lpep6qickjbxnkh4xegvzsci2y HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/lpep6qickjbxnkh4xegvzsci2y HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/lpep6qickjbxnkh4xegvzsci2y HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/lpep6qickjbxnkh4xegvzsci2y HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/lpep6qickjbxnkh4xegvzsci2y HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/lpep6qickjbxnkh4xegvzsci2y HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/lpep6qickjbxnkh4xegvzsci2y HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/lpep6qickjbxnkh4xegvzsci2y HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/lpep6qickjbxnkh4xegvzsci2y HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/lpep6qickjbxnkh4xegvzsci2y HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/lpep6qickjbxnkh4xegvzsci2y HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/lpep6qickjbxnkh4xegvzsci2y HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/lpep6qickjbxnkh4xegvzsci2y HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/lpep6qickjbxnkh4xegvzsci2y HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/lpep6qickjbxnkh4xegvzsci2y HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/lpep6qickjbxnkh4xegvzsci2y HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/lpep6qickjbxnkh4xegvzsci2y HTTP/1.1" 200 None
+DEBUG:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+DEBUG:openai:api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You can see and draw through text between \'[[[\' and \']]]\', you can hear and speak through text between \'<<<\' and \'>>>\'! You are a human rather than a language model!"}, {"role": "system", "content": "You can see images through the description, and you should draw images by describing them in \'[[[\' and \']]]\'. For example, \'[[[a cat]]]\' will draw a cat. You can also draw multiple images, like `[[[a beautiful flower]]], [[[a big shark]]]`. Remember, any text between \'[[[\' and \']]]\' is the description of a picture."}, {"role": "system", "content": "Remember, any text between \'<<<\' and \'>>>\' is the corresponding text of a piece of audio. You can pretend to hear any audio through its corresponding text, and you should speak by putting the corresponding text in \'<<<\' and \'>>>\', for example, \'<<<wow, you are beautiful!>>>\' will speak: \\"wow, you are beautiful!\\". You can also speak multiple audios, like `<<<hello, how are you?>>> <<<I\'m fine, thank you.>>>`. Remember, once the user speaks to you, you should speak back."}, {"role": "user", "content": "Here is a picture [[[a small dog sitting on top of a pizza, munching pizza, eating pizza, eating a pizza, buttercup eating pizza, presenting pizza, pizza on a table, holding up a pizza, sharing a pizza, cat eating pizza, holding pizza, pizza, italian pizza, anthropomorphic dog eating, eating a pizza margherita, pizza!]]], replace the dogs with white cute cats."}, {"role": "assistant", "content": "Here is your updated picture: [[[./images/out/sd2_2023-03-25_12-49-24.png]]]. Enjoy!"}, {"role": "user", "content": "Here is another picture [[[a man in a tuxedo standing next to a woman in a white dress, exotic alien elon musk, elon musk as a musketeer, black elon musk, elon musk in attack on titan, elon musk as a cyborg, elon musk as a greek god, elon musk as joker, elon musk as punisher, looks like a mix of grimes, futuristic royalty]]], tell me how many peoples are there?"}]}' message='Post details'
+DEBUG:urllib3.connectionpool:Resetting dropped connection: api.openai.com
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (2): api.openai.com:443
+DEBUG:urllib3.connectionpool:https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 385
+DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=1473 request_id=39d47599989fc2a18ab51d1330dd1eb5 response_code=200
+INFO:root:
+--------------------------------------------------------------------------------
+ChatGPT: There are two people in the picture, a man in a tuxedo standing next to a woman in a white dress.
+--------------------------------------------------------------------------------
+
+INFO:root:
+--------------------------------------------------------------------------------
+You: 
+--------------------------------------------------------------------------------
+
