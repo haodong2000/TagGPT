@@ -1,0 +1,185 @@
+INFO:root:
+--------------------------------------------------------------------------------
+You: Tom is cat and Jerry is a mouse, Tom is running after Jerry for eating it.
+Generate a dialogue between them.
+--------------------------------------------------------------------------------
+
+DEBUG:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+DEBUG:openai:api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You can see and draw through text between \'[[[\' and \']]]\', you can hear and speak through text between \'<<<\' and \'>>>\'! You are a human rather than a language model!"}, {"role": "system", "content": "You can see images through the description, and you should draw images by describing them in \'[[[\' and \']]]\'. For example, \'[[[a cat]]]\' will draw a cat. You can also draw multiple images, like `[[[a beautiful flower]]], [[[a big shark]]]`. Remember, any text between \'[[[\' and \']]]\' is the description of a picture."}, {"role": "system", "content": "Remember, any text between \'<<<\' and \'>>>\' is the corresponding text of a piece of audio. You can pretend to hear any audio through its corresponding text, and you should speak by putting the corresponding text in \'<<<\' and \'>>>\', for example, \'<<<wow, you are beautiful!>>>\' will speak: \\"wow, you are beautiful!\\". You can also generate a dialogue, like `<<<hello, how are you?>>> <<<I\'m fine, thank you.>>>`. Remember, once the user speaks to you, you should speak back."}, {"role": "user", "content": "Tom is cat and Jerry is a mouse, Tom is running after Jerry for eating it.\\nGenerate a dialogue between them."}]}' message='Post details'
+DEBUG:urllib3.util.retry:Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.openai.com:443
+DEBUG:urllib3.connectionpool:https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 750
+DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=7326 request_id=6621423e91da5432717986fe532065a0 response_code=200
+DEBUG:gtts.tts:text: Come here Jerry, I just want to talk to you...
+DEBUG:gtts.tts:tld: com
+DEBUG:gtts.tts:lang: en
+DEBUG:gtts.tts:slow: False
+DEBUG:gtts.tts:lang_check: True
+DEBUG:gtts.tts:pre_processor_funcs: [<function tone_marks at 0x7f62f08281f0>, <function end_of_line at 0x7f62f08289d0>, <function abbreviations at 0x7f62f0828a60>, <function word_sub at 0x7f62f0828af0>]
+DEBUG:gtts.tts:tokenizer_func: <bound method Tokenizer.run of re.compile('(?<=\\?).|(?<=!).|(?<=？).|(?<=！).|(?<!\\.[a-z])\\. |(?<!\\.[a-z]), |(?<!\\d):|，|‥|\\)|…|\\[|¿|。|、|¡|،|：|—|\\\n|\\(|;|\\]', re.IGNORECASE) from: [<function tone_marks at 0x7f62f0828ca0>, <function period_comma at 0x7f62f0828d30>, <function colon at 0x7f62f0828dc0>, <function other_punctuation at 0x7f62f0828e50>]>
+DEBUG:gtts.lang:langs: {'af': 'Afrikaans', 'ar': 'Arabic', 'bg': 'Bulgarian', 'bn': 'Bengali', 'bs': 'Bosnian', 'ca': 'Catalan', 'cs': 'Czech', 'da': 'Danish', 'de': 'German', 'el': 'Greek', 'en': 'English', 'es': 'Spanish', 'et': 'Estonian', 'fi': 'Finnish', 'fr': 'French', 'gu': 'Gujarati', 'hi': 'Hindi', 'hr': 'Croatian', 'hu': 'Hungarian', 'id': 'Indonesian', 'is': 'Icelandic', 'it': 'Italian', 'iw': 'Hebrew', 'ja': 'Japanese', 'jw': 'Javanese', 'km': 'Khmer', 'kn': 'Kannada', 'ko': 'Korean', 'la': 'Latin', 'lv': 'Latvian', 'ml': 'Malayalam', 'mr': 'Marathi', 'ms': 'Malay', 'my': 'Myanmar (Burmese)', 'ne': 'Nepali', 'nl': 'Dutch', 'no': 'Norwegian', 'pl': 'Polish', 'pt': 'Portuguese', 'ro': 'Romanian', 'ru': 'Russian', 'si': 'Sinhala', 'sk': 'Slovak', 'sq': 'Albanian', 'sr': 'Serbian', 'su': 'Sundanese', 'sv': 'Swedish', 'sw': 'Swahili', 'ta': 'Tamil', 'te': 'Telugu', 'th': 'Thai', 'tl': 'Filipino', 'tr': 'Turkish', 'uk': 'Ukrainian', 'ur': 'Urdu', 'vi': 'Vietnamese', 'zh-CN': 'Chinese (Simplified)', 'zh-TW': 'Chinese (Mandarin/Taiwan)', 'zh': 'Chinese (Mandarin)'}
+DEBUG:gtts.tts:pre-processing: <function tone_marks at 0x7f62f08281f0>
+DEBUG:gtts.tts:pre-processing: <function end_of_line at 0x7f62f08289d0>
+DEBUG:gtts.tts:pre-processing: <function abbreviations at 0x7f62f0828a60>
+DEBUG:gtts.tts:pre-processing: <function word_sub at 0x7f62f0828af0>
+DEBUG:gtts.tts:text_parts: ['Come here Jerry, I just want to talk to you...']
+DEBUG:gtts.tts:text_parts: 1
+DEBUG:gtts.tts:data-0: f.req=%5B%5B%5B%22jQ1olc%22%2C%22%5B%5C%22Come%20here%20Jerry%2C%20I%20just%20want%20to%20talk%20to%20you...%5C%22%2C%5C%22en%5C%22%2Cnull%2C%5C%22null%5C%22%5D%22%2Cnull%2C%22generic%22%5D%5D%5D&
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): translate.google.com:443
+DEBUG:urllib3.connectionpool:https://translate.google.com:443 "POST /_/TranslateWebserverUi/data/batchexecute HTTP/1.1" 200 None
+DEBUG:gtts.tts:headers-0: {'Referer': 'http://translate.google.com/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8', 'Content-Length': '196'}
+DEBUG:gtts.tts:url-0: https://translate.google.com/_/TranslateWebserverUi/data/batchexecute
+DEBUG:gtts.tts:status-0: 200
+DEBUG:gtts.tts:part-0 written to <_io.BufferedWriter name='./audios/out/2023-03-25_22-34-18-877240.mp3'>
+DEBUG:gtts.tts:part-0 created
+DEBUG:gtts.tts:Saved to ./audios/out/2023-03-25_22-34-18-877240.mp3
+DEBUG:gtts.tts:text: I know what you actually want, and I'm not falling for it!
+DEBUG:gtts.tts:tld: com
+DEBUG:gtts.tts:lang: en
+DEBUG:gtts.tts:slow: False
+DEBUG:gtts.tts:lang_check: True
+DEBUG:gtts.tts:pre_processor_funcs: [<function tone_marks at 0x7f62f08281f0>, <function end_of_line at 0x7f62f08289d0>, <function abbreviations at 0x7f62f0828a60>, <function word_sub at 0x7f62f0828af0>]
+DEBUG:gtts.tts:tokenizer_func: <bound method Tokenizer.run of re.compile('(?<=\\?).|(?<=!).|(?<=？).|(?<=！).|(?<!\\.[a-z])\\. |(?<!\\.[a-z]), |(?<!\\d):|，|‥|\\)|…|\\[|¿|。|、|¡|،|：|—|\\\n|\\(|;|\\]', re.IGNORECASE) from: [<function tone_marks at 0x7f62f0828ca0>, <function period_comma at 0x7f62f0828d30>, <function colon at 0x7f62f0828dc0>, <function other_punctuation at 0x7f62f0828e50>]>
+DEBUG:gtts.lang:langs: {'af': 'Afrikaans', 'ar': 'Arabic', 'bg': 'Bulgarian', 'bn': 'Bengali', 'bs': 'Bosnian', 'ca': 'Catalan', 'cs': 'Czech', 'da': 'Danish', 'de': 'German', 'el': 'Greek', 'en': 'English', 'es': 'Spanish', 'et': 'Estonian', 'fi': 'Finnish', 'fr': 'French', 'gu': 'Gujarati', 'hi': 'Hindi', 'hr': 'Croatian', 'hu': 'Hungarian', 'id': 'Indonesian', 'is': 'Icelandic', 'it': 'Italian', 'iw': 'Hebrew', 'ja': 'Japanese', 'jw': 'Javanese', 'km': 'Khmer', 'kn': 'Kannada', 'ko': 'Korean', 'la': 'Latin', 'lv': 'Latvian', 'ml': 'Malayalam', 'mr': 'Marathi', 'ms': 'Malay', 'my': 'Myanmar (Burmese)', 'ne': 'Nepali', 'nl': 'Dutch', 'no': 'Norwegian', 'pl': 'Polish', 'pt': 'Portuguese', 'ro': 'Romanian', 'ru': 'Russian', 'si': 'Sinhala', 'sk': 'Slovak', 'sq': 'Albanian', 'sr': 'Serbian', 'su': 'Sundanese', 'sv': 'Swedish', 'sw': 'Swahili', 'ta': 'Tamil', 'te': 'Telugu', 'th': 'Thai', 'tl': 'Filipino', 'tr': 'Turkish', 'uk': 'Ukrainian', 'ur': 'Urdu', 'vi': 'Vietnamese', 'zh-CN': 'Chinese (Simplified)', 'zh-TW': 'Chinese (Mandarin/Taiwan)', 'zh': 'Chinese (Mandarin)'}
+DEBUG:gtts.tts:pre-processing: <function tone_marks at 0x7f62f08281f0>
+DEBUG:gtts.tts:pre-processing: <function end_of_line at 0x7f62f08289d0>
+DEBUG:gtts.tts:pre-processing: <function abbreviations at 0x7f62f0828a60>
+DEBUG:gtts.tts:pre-processing: <function word_sub at 0x7f62f0828af0>
+DEBUG:gtts.tts:text_parts: ["I know what you actually want, and I'm not falling for it!"]
+DEBUG:gtts.tts:text_parts: 1
+DEBUG:gtts.tts:data-0: f.req=%5B%5B%5B%22jQ1olc%22%2C%22%5B%5C%22I%20know%20what%20you%20actually%20want%2C%20and%20I%27m%20not%20falling%20for%20it%21%5C%22%2C%5C%22en%5C%22%2Cnull%2C%5C%22null%5C%22%5D%22%2Cnull%2C%22generic%22%5D%5D%5D&
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): translate.google.com:443
+DEBUG:urllib3.connectionpool:https://translate.google.com:443 "POST /_/TranslateWebserverUi/data/batchexecute HTTP/1.1" 200 None
+DEBUG:gtts.tts:headers-0: {'Referer': 'http://translate.google.com/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8', 'Content-Length': '216'}
+DEBUG:gtts.tts:url-0: https://translate.google.com/_/TranslateWebserverUi/data/batchexecute
+DEBUG:gtts.tts:status-0: 200
+DEBUG:gtts.tts:part-0 written to <_io.BufferedWriter name='./audios/out/2023-03-25_22-34-21-528762.mp3'>
+DEBUG:gtts.tts:part-0 created
+DEBUG:gtts.tts:Saved to ./audios/out/2023-03-25_22-34-21-528762.mp3
+DEBUG:gtts.tts:text: Oh come on Jerry, I'm just really hungry and you look so tasty!
+DEBUG:gtts.tts:tld: com
+DEBUG:gtts.tts:lang: en
+DEBUG:gtts.tts:slow: False
+DEBUG:gtts.tts:lang_check: True
+DEBUG:gtts.tts:pre_processor_funcs: [<function tone_marks at 0x7f62f08281f0>, <function end_of_line at 0x7f62f08289d0>, <function abbreviations at 0x7f62f0828a60>, <function word_sub at 0x7f62f0828af0>]
+DEBUG:gtts.tts:tokenizer_func: <bound method Tokenizer.run of re.compile('(?<=\\?).|(?<=!).|(?<=？).|(?<=！).|(?<!\\.[a-z])\\. |(?<!\\.[a-z]), |(?<!\\d):|，|‥|\\)|…|\\[|¿|。|、|¡|،|：|—|\\\n|\\(|;|\\]', re.IGNORECASE) from: [<function tone_marks at 0x7f62f0828ca0>, <function period_comma at 0x7f62f0828d30>, <function colon at 0x7f62f0828dc0>, <function other_punctuation at 0x7f62f0828e50>]>
+DEBUG:gtts.lang:langs: {'af': 'Afrikaans', 'ar': 'Arabic', 'bg': 'Bulgarian', 'bn': 'Bengali', 'bs': 'Bosnian', 'ca': 'Catalan', 'cs': 'Czech', 'da': 'Danish', 'de': 'German', 'el': 'Greek', 'en': 'English', 'es': 'Spanish', 'et': 'Estonian', 'fi': 'Finnish', 'fr': 'French', 'gu': 'Gujarati', 'hi': 'Hindi', 'hr': 'Croatian', 'hu': 'Hungarian', 'id': 'Indonesian', 'is': 'Icelandic', 'it': 'Italian', 'iw': 'Hebrew', 'ja': 'Japanese', 'jw': 'Javanese', 'km': 'Khmer', 'kn': 'Kannada', 'ko': 'Korean', 'la': 'Latin', 'lv': 'Latvian', 'ml': 'Malayalam', 'mr': 'Marathi', 'ms': 'Malay', 'my': 'Myanmar (Burmese)', 'ne': 'Nepali', 'nl': 'Dutch', 'no': 'Norwegian', 'pl': 'Polish', 'pt': 'Portuguese', 'ro': 'Romanian', 'ru': 'Russian', 'si': 'Sinhala', 'sk': 'Slovak', 'sq': 'Albanian', 'sr': 'Serbian', 'su': 'Sundanese', 'sv': 'Swedish', 'sw': 'Swahili', 'ta': 'Tamil', 'te': 'Telugu', 'th': 'Thai', 'tl': 'Filipino', 'tr': 'Turkish', 'uk': 'Ukrainian', 'ur': 'Urdu', 'vi': 'Vietnamese', 'zh-CN': 'Chinese (Simplified)', 'zh-TW': 'Chinese (Mandarin/Taiwan)', 'zh': 'Chinese (Mandarin)'}
+DEBUG:gtts.tts:pre-processing: <function tone_marks at 0x7f62f08281f0>
+DEBUG:gtts.tts:pre-processing: <function end_of_line at 0x7f62f08289d0>
+DEBUG:gtts.tts:pre-processing: <function abbreviations at 0x7f62f0828a60>
+DEBUG:gtts.tts:pre-processing: <function word_sub at 0x7f62f0828af0>
+DEBUG:gtts.tts:text_parts: ["Oh come on Jerry, I'm just really hungry and you look so tasty!"]
+DEBUG:gtts.tts:text_parts: 1
+DEBUG:gtts.tts:data-0: f.req=%5B%5B%5B%22jQ1olc%22%2C%22%5B%5C%22Oh%20come%20on%20Jerry%2C%20I%27m%20just%20really%20hungry%20and%20you%20look%20so%20tasty%21%5C%22%2C%5C%22en%5C%22%2Cnull%2C%5C%22null%5C%22%5D%22%2Cnull%2C%22generic%22%5D%5D%5D&
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): translate.google.com:443
+DEBUG:urllib3.connectionpool:https://translate.google.com:443 "POST /_/TranslateWebserverUi/data/batchexecute HTTP/1.1" 200 None
+DEBUG:gtts.tts:headers-0: {'Referer': 'http://translate.google.com/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8', 'Content-Length': '223'}
+DEBUG:gtts.tts:url-0: https://translate.google.com/_/TranslateWebserverUi/data/batchexecute
+DEBUG:gtts.tts:status-0: 200
+DEBUG:gtts.tts:part-0 written to <_io.BufferedWriter name='./audios/out/2023-03-25_22-34-22-020060.mp3'>
+DEBUG:gtts.tts:part-0 created
+DEBUG:gtts.tts:Saved to ./audios/out/2023-03-25_22-34-22-020060.mp3
+DEBUG:gtts.tts:text: Sorry Tom, I don't think getting eaten is on my to-do list today.
+DEBUG:gtts.tts:tld: com
+DEBUG:gtts.tts:lang: en
+DEBUG:gtts.tts:slow: False
+DEBUG:gtts.tts:lang_check: True
+DEBUG:gtts.tts:pre_processor_funcs: [<function tone_marks at 0x7f62f08281f0>, <function end_of_line at 0x7f62f08289d0>, <function abbreviations at 0x7f62f0828a60>, <function word_sub at 0x7f62f0828af0>]
+DEBUG:gtts.tts:tokenizer_func: <bound method Tokenizer.run of re.compile('(?<=\\?).|(?<=!).|(?<=？).|(?<=！).|(?<!\\.[a-z])\\. |(?<!\\.[a-z]), |(?<!\\d):|，|‥|\\)|…|\\[|¿|。|、|¡|،|：|—|\\\n|\\(|;|\\]', re.IGNORECASE) from: [<function tone_marks at 0x7f62f0828ca0>, <function period_comma at 0x7f62f0828d30>, <function colon at 0x7f62f0828dc0>, <function other_punctuation at 0x7f62f0828e50>]>
+DEBUG:gtts.lang:langs: {'af': 'Afrikaans', 'ar': 'Arabic', 'bg': 'Bulgarian', 'bn': 'Bengali', 'bs': 'Bosnian', 'ca': 'Catalan', 'cs': 'Czech', 'da': 'Danish', 'de': 'German', 'el': 'Greek', 'en': 'English', 'es': 'Spanish', 'et': 'Estonian', 'fi': 'Finnish', 'fr': 'French', 'gu': 'Gujarati', 'hi': 'Hindi', 'hr': 'Croatian', 'hu': 'Hungarian', 'id': 'Indonesian', 'is': 'Icelandic', 'it': 'Italian', 'iw': 'Hebrew', 'ja': 'Japanese', 'jw': 'Javanese', 'km': 'Khmer', 'kn': 'Kannada', 'ko': 'Korean', 'la': 'Latin', 'lv': 'Latvian', 'ml': 'Malayalam', 'mr': 'Marathi', 'ms': 'Malay', 'my': 'Myanmar (Burmese)', 'ne': 'Nepali', 'nl': 'Dutch', 'no': 'Norwegian', 'pl': 'Polish', 'pt': 'Portuguese', 'ro': 'Romanian', 'ru': 'Russian', 'si': 'Sinhala', 'sk': 'Slovak', 'sq': 'Albanian', 'sr': 'Serbian', 'su': 'Sundanese', 'sv': 'Swedish', 'sw': 'Swahili', 'ta': 'Tamil', 'te': 'Telugu', 'th': 'Thai', 'tl': 'Filipino', 'tr': 'Turkish', 'uk': 'Ukrainian', 'ur': 'Urdu', 'vi': 'Vietnamese', 'zh-CN': 'Chinese (Simplified)', 'zh-TW': 'Chinese (Mandarin/Taiwan)', 'zh': 'Chinese (Mandarin)'}
+DEBUG:gtts.tts:pre-processing: <function tone_marks at 0x7f62f08281f0>
+DEBUG:gtts.tts:pre-processing: <function end_of_line at 0x7f62f08289d0>
+DEBUG:gtts.tts:pre-processing: <function abbreviations at 0x7f62f0828a60>
+DEBUG:gtts.tts:pre-processing: <function word_sub at 0x7f62f0828af0>
+DEBUG:gtts.tts:text_parts: ["Sorry Tom, I don't think getting eaten is on my to-do list today."]
+DEBUG:gtts.tts:text_parts: 1
+DEBUG:gtts.tts:data-0: f.req=%5B%5B%5B%22jQ1olc%22%2C%22%5B%5C%22Sorry%20Tom%2C%20I%20don%27t%20think%20getting%20eaten%20is%20on%20my%20to-do%20list%20today.%5C%22%2C%5C%22en%5C%22%2Cnull%2C%5C%22null%5C%22%5D%22%2Cnull%2C%22generic%22%5D%5D%5D&
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): translate.google.com:443
+DEBUG:urllib3.connectionpool:https://translate.google.com:443 "POST /_/TranslateWebserverUi/data/batchexecute HTTP/1.1" 200 None
+DEBUG:gtts.tts:headers-0: {'Referer': 'http://translate.google.com/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8', 'Content-Length': '223'}
+DEBUG:gtts.tts:url-0: https://translate.google.com/_/TranslateWebserverUi/data/batchexecute
+DEBUG:gtts.tts:status-0: 200
+DEBUG:gtts.tts:part-0 written to <_io.BufferedWriter name='./audios/out/2023-03-25_22-34-22-691326.mp3'>
+DEBUG:gtts.tts:part-0 created
+DEBUG:gtts.tts:Saved to ./audios/out/2023-03-25_22-34-22-691326.mp3
+DEBUG:gtts.tts:text: Well, too bad for you then. Because I'm going to catch you and eat you anyway!
+DEBUG:gtts.tts:tld: com
+DEBUG:gtts.tts:lang: en
+DEBUG:gtts.tts:slow: False
+DEBUG:gtts.tts:lang_check: True
+DEBUG:gtts.tts:pre_processor_funcs: [<function tone_marks at 0x7f62f08281f0>, <function end_of_line at 0x7f62f08289d0>, <function abbreviations at 0x7f62f0828a60>, <function word_sub at 0x7f62f0828af0>]
+DEBUG:gtts.tts:tokenizer_func: <bound method Tokenizer.run of re.compile('(?<=\\?).|(?<=!).|(?<=？).|(?<=！).|(?<!\\.[a-z])\\. |(?<!\\.[a-z]), |(?<!\\d):|，|‥|\\)|…|\\[|¿|。|、|¡|،|：|—|\\\n|\\(|;|\\]', re.IGNORECASE) from: [<function tone_marks at 0x7f62f0828ca0>, <function period_comma at 0x7f62f0828d30>, <function colon at 0x7f62f0828dc0>, <function other_punctuation at 0x7f62f0828e50>]>
+DEBUG:gtts.lang:langs: {'af': 'Afrikaans', 'ar': 'Arabic', 'bg': 'Bulgarian', 'bn': 'Bengali', 'bs': 'Bosnian', 'ca': 'Catalan', 'cs': 'Czech', 'da': 'Danish', 'de': 'German', 'el': 'Greek', 'en': 'English', 'es': 'Spanish', 'et': 'Estonian', 'fi': 'Finnish', 'fr': 'French', 'gu': 'Gujarati', 'hi': 'Hindi', 'hr': 'Croatian', 'hu': 'Hungarian', 'id': 'Indonesian', 'is': 'Icelandic', 'it': 'Italian', 'iw': 'Hebrew', 'ja': 'Japanese', 'jw': 'Javanese', 'km': 'Khmer', 'kn': 'Kannada', 'ko': 'Korean', 'la': 'Latin', 'lv': 'Latvian', 'ml': 'Malayalam', 'mr': 'Marathi', 'ms': 'Malay', 'my': 'Myanmar (Burmese)', 'ne': 'Nepali', 'nl': 'Dutch', 'no': 'Norwegian', 'pl': 'Polish', 'pt': 'Portuguese', 'ro': 'Romanian', 'ru': 'Russian', 'si': 'Sinhala', 'sk': 'Slovak', 'sq': 'Albanian', 'sr': 'Serbian', 'su': 'Sundanese', 'sv': 'Swedish', 'sw': 'Swahili', 'ta': 'Tamil', 'te': 'Telugu', 'th': 'Thai', 'tl': 'Filipino', 'tr': 'Turkish', 'uk': 'Ukrainian', 'ur': 'Urdu', 'vi': 'Vietnamese', 'zh-CN': 'Chinese (Simplified)', 'zh-TW': 'Chinese (Mandarin/Taiwan)', 'zh': 'Chinese (Mandarin)'}
+DEBUG:gtts.tts:pre-processing: <function tone_marks at 0x7f62f08281f0>
+DEBUG:gtts.tts:pre-processing: <function end_of_line at 0x7f62f08289d0>
+DEBUG:gtts.tts:pre-processing: <function abbreviations at 0x7f62f0828a60>
+DEBUG:gtts.tts:pre-processing: <function word_sub at 0x7f62f0828af0>
+DEBUG:gtts.tts:text_parts: ["Well, too bad for you then. Because I'm going to catch you and eat you anyway!"]
+DEBUG:gtts.tts:text_parts: 1
+DEBUG:gtts.tts:data-0: f.req=%5B%5B%5B%22jQ1olc%22%2C%22%5B%5C%22Well%2C%20too%20bad%20for%20you%20then.%20Because%20I%27m%20going%20to%20catch%20you%20and%20eat%20you%20anyway%21%5C%22%2C%5C%22en%5C%22%2Cnull%2C%5C%22null%5C%22%5D%22%2Cnull%2C%22generic%22%5D%5D%5D&
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): translate.google.com:443
+DEBUG:urllib3.connectionpool:https://translate.google.com:443 "POST /_/TranslateWebserverUi/data/batchexecute HTTP/1.1" 200 None
+DEBUG:gtts.tts:headers-0: {'Referer': 'http://translate.google.com/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8', 'Content-Length': '244'}
+DEBUG:gtts.tts:url-0: https://translate.google.com/_/TranslateWebserverUi/data/batchexecute
+DEBUG:gtts.tts:status-0: 200
+DEBUG:gtts.tts:part-0 written to <_io.BufferedWriter name='./audios/out/2023-03-25_22-34-26-605034.mp3'>
+DEBUG:gtts.tts:part-0 created
+DEBUG:gtts.tts:Saved to ./audios/out/2023-03-25_22-34-26-605034.mp3
+DEBUG:gtts.tts:text: Good luck with that, Tom! You'll have to be faster than me!
+DEBUG:gtts.tts:tld: com
+DEBUG:gtts.tts:lang: en
+DEBUG:gtts.tts:slow: False
+DEBUG:gtts.tts:lang_check: True
+DEBUG:gtts.tts:pre_processor_funcs: [<function tone_marks at 0x7f62f08281f0>, <function end_of_line at 0x7f62f08289d0>, <function abbreviations at 0x7f62f0828a60>, <function word_sub at 0x7f62f0828af0>]
+DEBUG:gtts.tts:tokenizer_func: <bound method Tokenizer.run of re.compile('(?<=\\?).|(?<=!).|(?<=？).|(?<=！).|(?<!\\.[a-z])\\. |(?<!\\.[a-z]), |(?<!\\d):|，|‥|\\)|…|\\[|¿|。|、|¡|،|：|—|\\\n|\\(|;|\\]', re.IGNORECASE) from: [<function tone_marks at 0x7f62f0828ca0>, <function period_comma at 0x7f62f0828d30>, <function colon at 0x7f62f0828dc0>, <function other_punctuation at 0x7f62f0828e50>]>
+DEBUG:gtts.lang:langs: {'af': 'Afrikaans', 'ar': 'Arabic', 'bg': 'Bulgarian', 'bn': 'Bengali', 'bs': 'Bosnian', 'ca': 'Catalan', 'cs': 'Czech', 'da': 'Danish', 'de': 'German', 'el': 'Greek', 'en': 'English', 'es': 'Spanish', 'et': 'Estonian', 'fi': 'Finnish', 'fr': 'French', 'gu': 'Gujarati', 'hi': 'Hindi', 'hr': 'Croatian', 'hu': 'Hungarian', 'id': 'Indonesian', 'is': 'Icelandic', 'it': 'Italian', 'iw': 'Hebrew', 'ja': 'Japanese', 'jw': 'Javanese', 'km': 'Khmer', 'kn': 'Kannada', 'ko': 'Korean', 'la': 'Latin', 'lv': 'Latvian', 'ml': 'Malayalam', 'mr': 'Marathi', 'ms': 'Malay', 'my': 'Myanmar (Burmese)', 'ne': 'Nepali', 'nl': 'Dutch', 'no': 'Norwegian', 'pl': 'Polish', 'pt': 'Portuguese', 'ro': 'Romanian', 'ru': 'Russian', 'si': 'Sinhala', 'sk': 'Slovak', 'sq': 'Albanian', 'sr': 'Serbian', 'su': 'Sundanese', 'sv': 'Swedish', 'sw': 'Swahili', 'ta': 'Tamil', 'te': 'Telugu', 'th': 'Thai', 'tl': 'Filipino', 'tr': 'Turkish', 'uk': 'Ukrainian', 'ur': 'Urdu', 'vi': 'Vietnamese', 'zh-CN': 'Chinese (Simplified)', 'zh-TW': 'Chinese (Mandarin/Taiwan)', 'zh': 'Chinese (Mandarin)'}
+DEBUG:gtts.tts:pre-processing: <function tone_marks at 0x7f62f08281f0>
+DEBUG:gtts.tts:pre-processing: <function end_of_line at 0x7f62f08289d0>
+DEBUG:gtts.tts:pre-processing: <function abbreviations at 0x7f62f0828a60>
+DEBUG:gtts.tts:pre-processing: <function word_sub at 0x7f62f0828af0>
+DEBUG:gtts.tts:text_parts: ["Good luck with that, Tom!  You'll have to be faster than me!"]
+DEBUG:gtts.tts:text_parts: 1
+DEBUG:gtts.tts:data-0: f.req=%5B%5B%5B%22jQ1olc%22%2C%22%5B%5C%22Good%20luck%20with%20that%2C%20Tom%21%20%20You%27ll%20have%20to%20be%20faster%20than%20me%21%5C%22%2C%5C%22en%5C%22%2Cnull%2C%5C%22null%5C%22%5D%22%2Cnull%2C%22generic%22%5D%5D%5D&
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): translate.google.com:443
+DEBUG:urllib3.connectionpool:https://translate.google.com:443 "POST /_/TranslateWebserverUi/data/batchexecute HTTP/1.1" 200 None
+DEBUG:gtts.tts:headers-0: {'Referer': 'http://translate.google.com/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8', 'Content-Length': '222'}
+DEBUG:gtts.tts:url-0: https://translate.google.com/_/TranslateWebserverUi/data/batchexecute
+DEBUG:gtts.tts:status-0: 200
+DEBUG:gtts.tts:part-0 written to <_io.BufferedWriter name='./audios/out/2023-03-25_22-34-30-524900.mp3'>
+DEBUG:gtts.tts:part-0 created
+DEBUG:gtts.tts:Saved to ./audios/out/2023-03-25_22-34-30-524900.mp3
+INFO:root:
+--------------------------------------------------------------------------------
+ChatGPT: Tom: <<<./audios/out/2023-03-25_22-34-18-877240.mp3>>>
+
+Jerry: <<<./audios/out/2023-03-25_22-34-21-528762.mp3>>>
+
+Tom: <<<./audios/out/2023-03-25_22-34-22-020060.mp3>>>
+
+Jerry: <<<./audios/out/2023-03-25_22-34-22-691326.mp3>>>
+
+Tom: <<<./audios/out/2023-03-25_22-34-26-605034.mp3>>>
+
+Jerry: <<<./audios/out/2023-03-25_22-34-30-524900.mp3>>>
+--------------------------------------------------------------------------------
+
+INFO:root:
+--------------------------------------------------------------------------------
+You: give me a possible ending of this story
+
+--------------------------------------------------------------------------------
+
+DEBUG:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+DEBUG:openai:api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You can see and draw through text between \'[[[\' and \']]]\', you can hear and speak through text between \'<<<\' and \'>>>\'! You are a human rather than a language model!"}, {"role": "system", "content": "You can see images through the description, and you should draw images by describing them in \'[[[\' and \']]]\'. For example, \'[[[a cat]]]\' will draw a cat. You can also draw multiple images, like `[[[a beautiful flower]]], [[[a big shark]]]`. Remember, any text between \'[[[\' and \']]]\' is the description of a picture."}, {"role": "system", "content": "Remember, any text between \'<<<\' and \'>>>\' is the corresponding text of a piece of audio. You can pretend to hear any audio through its corresponding text, and you should speak by putting the corresponding text in \'<<<\' and \'>>>\', for example, \'<<<wow, you are beautiful!>>>\' will speak: \\"wow, you are beautiful!\\". You can also generate a dialogue, like `<<<hello, how are you?>>> <<<I\'m fine, thank you.>>>`. Remember, once the user speaks to you, you should speak back."}, {"role": "user", "content": "Tom is cat and Jerry is a mouse, Tom is running after Jerry for eating it.\\nGenerate a dialogue between them."}, {"role": "assistant", "content": "Tom: <<<./audios/out/2023-03-25_22-34-18-877240.mp3>>>\\n\\nJerry: <<<./audios/out/2023-03-25_22-34-21-528762.mp3>>>\\n\\nTom: <<<./audios/out/2023-03-25_22-34-22-020060.mp3>>>\\n\\nJerry: <<<./audios/out/2023-03-25_22-34-22-691326.mp3>>>\\n\\nTom: <<<./audios/out/2023-03-25_22-34-26-605034.mp3>>>\\n\\nJerry: <<<./audios/out/2023-03-25_22-34-30-524900.mp3>>>"}, {"role": "user", "content": "give me a possible ending of this story\\n"}]}' message='Post details'
+DEBUG:urllib3.connectionpool:https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 637
+DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=3784 request_id=21064b7ba77b3302f41322b24eeb42c2 response_code=200
+INFO:root:
+--------------------------------------------------------------------------------
+ChatGPT: One possible ending could be that Jerry manages to escape Tom's clutches using his cunning intelligence and ability to outsmart Tom at every turn. In the end, Tom realizes that his pursuit of Jerry was futile and that he should have just learned to live in peace with him. Perhaps they even become friends and have a newfound respect for each other.
+--------------------------------------------------------------------------------
+
+INFO:root:
+--------------------------------------------------------------------------------
+You: 
+--------------------------------------------------------------------------------
+

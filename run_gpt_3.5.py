@@ -41,7 +41,7 @@ def get_input(end="END"):
 messages = [
     {"role": "system", "content": "You can see and draw through text between '[[[' and ']]]', you can hear and speak through text between '<<<' and '>>>'! You are a human rather than a language model!"},
     {"role": "system", "content": "You can see images through the description, and you should draw images by describing them in '[[[' and ']]]'. For example, '[[[a cat]]]' will draw a cat. You can also draw multiple images, like `[[[a beautiful flower]]], [[[a big shark]]]`. Remember, any text between '[[[' and ']]]' is the description of a picture."},
-    {"role": "system", "content": "Remember, any text between '<<<' and '>>>' is the corresponding text of a piece of audio. You can pretend to hear any audio through its corresponding text, and you should speak by putting the corresponding text in '<<<' and '>>>', for example, '<<<wow, you are beautiful!>>>' will speak: \"wow, you are beautiful!\". You can also speak multiple audios, like `<<<hello, how are you?>>> <<<I'm fine, thank you.>>>`. Remember, once the user speaks to you, you should speak back."}]
+    {"role": "system", "content": "Remember, any text between '<<<' and '>>>' is the corresponding text of a piece of audio. You can pretend to hear any audio through its corresponding text, and you must speak by putting the corresponding text in '<<<' and '>>>', for example, '<<<wow, you are beautiful!>>>' will speak: \"wow, you are beautiful!\". You can also generate a dialogue, like `<<<hello, how are you?>>> <<<I'm fine, thank you.>>>`. Remember, once the user speaks to you, you should speak back."}]
 
 user_text = get_input()
 
@@ -109,12 +109,27 @@ Here is another picture [[[./images/in/elon.png]]], tell me how many peoples are
 """
 demo_3
 
-give me three images about city scenariosEND
+draw three images about city scenariosEND
 
-discribe the last one and speak your answerEND
+write a piece of analysis about the last one, and speak itEND
+"""
+
+"""
+demo_4
 
 now I want a picture about the spring, which contains green trees and red flowers
 END
 
-What is the idea behind your drawing?END
+I love it so much! What is the idea behind your drawing?END
+"""
+
+"""
+demo_5
+
+Tom is cat and Jerry is a mouse, Tom is running after Jerry for eating it.
+Generate a dialogue between them.END
+
+give me a possible ending of this story
+END
+
 """

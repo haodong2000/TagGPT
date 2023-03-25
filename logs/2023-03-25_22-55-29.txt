@@ -1,0 +1,51 @@
+INFO:root:
+--------------------------------------------------------------------------------
+You: now I want a picture about the spring, which contains green trees and red flowers
+
+--------------------------------------------------------------------------------
+
+DEBUG:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+DEBUG:openai:api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You can see and draw through text between \'[[[\' and \']]]\', you can hear and speak through text between \'<<<\' and \'>>>\'! You are a human rather than a language model!"}, {"role": "system", "content": "You can see images through the description, and you should draw images by describing them in \'[[[\' and \']]]\'. For example, \'[[[a cat]]]\' will draw a cat. You can also draw multiple images, like `[[[a beautiful flower]]], [[[a big shark]]]`. Remember, any text between \'[[[\' and \']]]\' is the description of a picture."}, {"role": "system", "content": "Remember, any text between \'<<<\' and \'>>>\' is the corresponding text of a piece of audio. You can pretend to hear any audio through its corresponding text, and you must speak by putting the corresponding text in \'<<<\' and \'>>>\', for example, \'<<<wow, you are beautiful!>>>\' will speak: \\"wow, you are beautiful!\\". You can also generate a dialogue, like `<<<hello, how are you?>>> <<<I\'m fine, thank you.>>>`. Remember, once the user speaks to you, you should speak back."}, {"role": "user", "content": "now I want a picture about the spring, which contains green trees and red flowers\\n"}]}' message='Post details'
+DEBUG:urllib3.util.retry:Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.openai.com:443
+DEBUG:urllib3.connectionpool:https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 440
+DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=2308 request_id=e191a767183821bd1a0fe1649589bd12 response_code=200
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.replicate.com:443
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/models/cjwbw/stable-diffusion-v2/versions/e5e1fd333a08c8035974a01dd42f799f1cca4625aec374643d716d9ae40cf2e4 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "POST /v1/predictions HTTP/1.1" 201 710
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/nbssdfb2avczvnjk6uj4ii6qpy HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/nbssdfb2avczvnjk6uj4ii6qpy HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/nbssdfb2avczvnjk6uj4ii6qpy HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/nbssdfb2avczvnjk6uj4ii6qpy HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/nbssdfb2avczvnjk6uj4ii6qpy HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/nbssdfb2avczvnjk6uj4ii6qpy HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/nbssdfb2avczvnjk6uj4ii6qpy HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://api.replicate.com:443 "GET /v1/predictions/nbssdfb2avczvnjk6uj4ii6qpy HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): replicate.delivery:443
+DEBUG:urllib3.connectionpool:https://replicate.delivery:443 "GET /pbxt/q940aagHNZoKK1JWte9wWHLavxvwKeTixkofDYFs8rlnrXWhA/out-0.png HTTP/1.1" 200 1261287
+INFO:root:
+--------------------------------------------------------------------------------
+ChatGPT: Sure, here is your image: 
+[[[./images/out/sd2_2023-03-25_22-55-50.png]]] 
+I hope you like it!
+--------------------------------------------------------------------------------
+
+INFO:root:
+--------------------------------------------------------------------------------
+You: I love it so much! What is the idea behind your drawing?
+--------------------------------------------------------------------------------
+
+DEBUG:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/chat/completions
+DEBUG:openai:api_version=None data='{"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You can see and draw through text between \'[[[\' and \']]]\', you can hear and speak through text between \'<<<\' and \'>>>\'! You are a human rather than a language model!"}, {"role": "system", "content": "You can see images through the description, and you should draw images by describing them in \'[[[\' and \']]]\'. For example, \'[[[a cat]]]\' will draw a cat. You can also draw multiple images, like `[[[a beautiful flower]]], [[[a big shark]]]`. Remember, any text between \'[[[\' and \']]]\' is the description of a picture."}, {"role": "system", "content": "Remember, any text between \'<<<\' and \'>>>\' is the corresponding text of a piece of audio. You can pretend to hear any audio through its corresponding text, and you must speak by putting the corresponding text in \'<<<\' and \'>>>\', for example, \'<<<wow, you are beautiful!>>>\' will speak: \\"wow, you are beautiful!\\". You can also generate a dialogue, like `<<<hello, how are you?>>> <<<I\'m fine, thank you.>>>`. Remember, once the user speaks to you, you should speak back."}, {"role": "user", "content": "now I want a picture about the spring, which contains green trees and red flowers\\n"}, {"role": "assistant", "content": "Sure, here is your image: \\n[[[./images/out/sd2_2023-03-25_22-55-50.png]]] \\nI hope you like it!"}, {"role": "user", "content": "I love it so much! What is the idea behind your drawing?"}]}' message='Post details'
+DEBUG:urllib3.connectionpool:https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 638
+DEBUG:openai:message='OpenAI API response' path=https://api.openai.com/v1/chat/completions processing_ms=4467 request_id=9f09e9cd814234a11b8eba3567bb5acf response_code=200
+INFO:root:
+--------------------------------------------------------------------------------
+ChatGPT: I'm glad you love it! The idea behind my drawing was to depict a beautiful and colorful spring scene. The green trees represent the new growth and abundance of the season, while the red flowers add a pop of bright color to the image. Overall, I wanted to create an image that evokes a sense of joy and happiness that comes with the arrival of spring.
+--------------------------------------------------------------------------------
+
+INFO:root:
+--------------------------------------------------------------------------------
+You: 
+--------------------------------------------------------------------------------
+

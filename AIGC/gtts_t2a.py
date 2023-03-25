@@ -7,7 +7,7 @@ def text2audio(text):
 
     audio_save_path = './audios/out'
     now = datetime.now()
-    audio_path = os.path.join(audio_save_path, now.strftime('%Y-%m-%d_%H-%M-%S') + '.mp3')
+    audio_path = os.path.join(audio_save_path, now.strftime('%Y-%m-%d_%H-%M-%S-%f') + '.mp3')
 
     tts.save(audio_path)
 
