@@ -1,5 +1,7 @@
 # TagGPT
 
+**[Demos](https://lebronlihd.github.io/blog/2023/demos-of-taggpt/) | [Prompt](https://lebronlihd.github.io/projects/taggpt/)**
+
 - **T**ext-**a**udio-**g**raph GPT: A simple ChatGPT based multimodal dialog generation engine that can
   - "see" through [clip-interrogator](https://replicate.com/pharmapsychotic/clip-interrogator),
   - "draw" through [stable-diffusion-v2](https://replicate.com/cjwbw/stable-diffusion-v2),
@@ -28,7 +30,11 @@ pillow
 time
 ```
 
-## Demos & usage
+## Demos
+
+- **[Please see full demos here](https://lebronlihd.github.io/blog/2023/demos-of-taggpt/)**
+
+## Usage
 
 - Images are expressed as `[[[./path/to/image]]]`
 - Audios are expressed as `<<<./path/to/audio>>>`
@@ -43,23 +49,10 @@ ChatGPT: Here is your updated picture: [[[./images/out/sd2_2023-03-25_12-49-24.p
 ```
 
 ```
-You: give me three images about city scenariosEND
-
-ChatGPT: Sure! Here are three images about city scenarios:
-[[[./images/out/sd2_2023-03-25_12-50-36.png]]], [[[./images/out/sd2_2023-03-25_12-50-46.png]]], [[[./images/out/sd2_2023-03-25_12-50-56.png]]].
-
-You: discribe the last one and speak your answerEND
-
-ChatGPT: The last image shows a busy city street filled with cars, buses, and people walking on the sidewalks. The tall buildings on either side of the street create a canyon-like effect, and the sun casts long shadows across the scene. There are streetlights and traffic signals visible, indicating that this is a heavily trafficked area. Overall, it's a bustling and vibrant city scene.
-
-As for my answer, here it is: <<<./audios/out/2023-03-25_12-51-11.mp3>>>.
-```
-
-```
 You: <<<./audios/in/assemblyai.mp3>>>
 please help me writa a short introduction about AssemblyAI END
 
-ChatGPT: AssemblyAI is a deep learning company that provides powerful APIs for audio transcription and understanding. Their APIs convert audio and video into text using advanced deep learning models, allowing for automatic transcription of millions of podcasts, zoom recordings, phone calls or video files daily. AssemblyAI is particularly good at helping users understand their data, with features such as auto chapters, sentiment analysis, content safety detection, auto highlights, and entity detection. Their API is used by developers to build a wide variety of applications, such as meeting summarizers, brand safety tools, and conversational intelligence platforms.
+ChatGPT: AssemblyAI is a deep learning company that ...
 ```
 
 ## Project Structure
@@ -81,7 +74,7 @@ TagGPT
 └── run_gpt_3.5.py
 ```
 
-## To do
+## To-do
 
 - Build a UI (maybe)
 
